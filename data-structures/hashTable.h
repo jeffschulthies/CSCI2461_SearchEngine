@@ -7,10 +7,11 @@
 #ifndef CSCI2461_SEARCHENGINE_HASHTABLE_H
 #define CSCI2461_SEARCHENGINE_HASHTABLE_H
 
-typedef struct hashTable {
+struct hashTable {
     int size;
-    linkedList **buckets;
-}hashTable;
+    struct linkedList **buckets;
+};
 
-hashTable* createHashTable(int buckets);
+struct hashTable* createHashTable(int buckets);
+
 #endif //CSCI2461_SEARCHENGINE_HASHTABLE_H

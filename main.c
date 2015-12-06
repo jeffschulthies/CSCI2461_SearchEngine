@@ -1,11 +1,8 @@
-#include <stdio.h>
-#include <glob.h>
-#include <unistd.h>
+#include "data-structures/hashTable.h"
 
 
 int main() {
-    printf("rest");
-    //FILE* textFile;
+    struct hashTable *table = createHashTable(5);
 
     return 0;
 }

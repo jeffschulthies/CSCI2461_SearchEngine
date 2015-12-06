@@ -7,18 +7,18 @@
 
 #endif //CSCI2461_SEARCHENGINE_LINKEDLIST_H
 
-typedef struct listNode {
+struct listNode {
     void *data;
-    struct node *next;
-    struct node *last;
-}listNode;
+    struct listNode *next;
+    struct listNode *last;
+};
 
-typedef struct linkedList {
-    struct ll_node *head;
-    struct ll_node *tail;
+struct linkedList {
+    struct listNode *head;
+    struct listNode *tail;
     int size;
-}linkedList;
+};
 
-linkedList  * linkedList_init();
+struct linkedList  *linkedList_init();
 
-void ll_append(linkedList *list, listNode *node);
+void append(struct linkedList *list, struct listNode *node);
