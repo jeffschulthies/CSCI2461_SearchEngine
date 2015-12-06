@@ -14,6 +14,8 @@ struct hashTable* createHashTable(int buckets) {
 
     for(int i = 0; i < buckets; i++) {
         hTable->buckets[i] = linkedList_init();
+
     }
 
+    return hTable;
 }
